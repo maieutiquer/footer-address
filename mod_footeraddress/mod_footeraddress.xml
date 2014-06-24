@@ -1,80 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.3.0" client="site" method="upgrade">
-    <name>mod_footeraddress</name>
-    <author>Daniel Rodriguez</author>
-    <creationDate>2014-05-05</creationDate>
-    <version>1.4</version>
-    <description>MOD_FOOTERADDRESS_XML_DESCRIPTION</description>
-    <files>
-        <filename>mod_footeraddress.xml</filename>
-        <filename module="mod_footeraddress">mod_footeraddress.php</filename>
-        <filename>helper.php</filename>
-        <folder>tmpl</folder>
-    </files>
-    <config>
-        <fields name="params">
-			<fieldset name="Address" label="MOD_FOOTERADDRESS_ADDRESS">
-                <field
-					name="name"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_NAME"
-					description="MOD_FOOTERADDRESS_FIELD,1" />
-                <field
-					name="address_street"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_1"
-					description="MOD_FOOTERADDRESS_FIELD,2" />
-                <field
-					name="address_postcode"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_2"
-					description="MOD_FOOTERADDRESS_FIELD,3" />
-                <field
-					name="address_locality"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_3"
-					description="MOD_FOOTERADDRESS_FIELD,4" />
-                <field
-					name="address_country"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_4"
-					description="MOD_FOOTERADDRESS_FIELD,5" />
-                <field
-					name="mobile"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_MOBILE"
-					description="MOD_FOOTERADDRESS_FIELD,6" />
-                <field
-					name="landline"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_TELEPHONE"
-					description="MOD_FOOTERADDRESS_FIELD,7" />
-                <field
-					name="fax"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_FAX"
-					description="MOD_FOOTERADDRESS_FIELD,7" />
-                <field
-					name="email"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_EMAIL"
-					description="MOD_FOOTERADDRESS_FIELD,8" />
-                <field
-					name="more"
-					type="text"
-					default=""
-					label="MOD_FOOTERADDRESS_MOREINFO"
-					description="MOD_FOOTERADDRESS_FIELD,9" />
-			</fieldset>
-		</fields>
-    </config>
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3.0" client="site" method="upgrade">
+  <name>mod_footeraddress</name>
+  <author>Daniel Rodriguez</author>
+  <creationDate>2014-05-05</creationDate>
+  <version>1.4</version>
+  <description>MOD_FOOTERADDRESS_XML_DESCRIPTION</description>
+  <files>
+    <filename>mod_footeraddress.xml</filename>
+    <filename module="mod_footeraddress">mod_footeraddress.php</filename>
+    <filename>helper.php</filename>
+    <folder>tmpl</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="Address" label="MOD_FOOTERADDRESS_ADDRESS">
+        <field
+            name="name"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_NAME"
+            description="MOD_FOOTERADDRESS_FIELD,1" />
+        <field
+            name="address_street"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_ADDRESS_1"
+            description="MOD_FOOTERADDRESS_FIELD,2" />
+        <field
+            name="address_postcode"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_ADDRESS_2"
+            description="MOD_FOOTERADDRESS_FIELD,3" />
+        <field
+            name="address_locality"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_ADDRESS_3"
+            description="MOD_FOOTERADDRESS_FIELD,4" />
+        <field
+            name="address_country"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_ADDRESS_4"
+            description="MOD_FOOTERADDRESS_FIELD,5" />
+        <field
+            name="mobile"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_MOBILE"
+            description="MOD_FOOTERADDRESS_FIELD,6" />
+        <field
+            name="landline"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_TELEPHONE"
+            description="MOD_FOOTERADDRESS_FIELD,7" />
+        <field
+            name="fax"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_FAX"
+            description="MOD_FOOTERADDRESS_FIELD,7" />
+        <field
+            name="email"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_EMAIL"
+            description="MOD_FOOTERADDRESS_FIELD,8" />
+        <field
+            name="more"
+            type="text"
+            default=""
+            label="MOD_FOOTERADDRESS_MOREINFO"
+            description="MOD_FOOTERADDRESS_FIELD,9" />
+      </fieldset>
+    </fields>
+  </config>
 </extension>
