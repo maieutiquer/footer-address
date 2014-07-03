@@ -5,4 +5,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 require_once dirname(__FILE__).'/helper.php';
 
 $footerInfo = modFooterAddressHelper::getFooterInfo( $params );
+$showSeparators = modFooterAddressHelper::getShowSeparators( $params );
+$separatorChar = modFooterAddressHelper::getSeparatorChar( $params );
 require( JModuleHelper::getLayoutPath( 'mod_footeraddress' ) );

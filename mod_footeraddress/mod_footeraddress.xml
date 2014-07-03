@@ -15,6 +15,18 @@
     <fields name="params">
       <fieldset name="Address" label="MOD_FOOTERADDRESS_ADDRESS">
         <field
+          name="separators"
+          type="checkbox"
+          default=""
+          label="MOD_FOOTERADDRESS_SEPARATORS"
+          description="MOD_FOOTERADDRESS_FIELD,1" />
+        <field
+          name="separator_char"
+          type="text"
+          default=""
+          label="MOD_FOOTERADDRESS_SEPARATOR_CHAR"
+          description="MOD_FOOTERADDRESS_FIELD,1" />
+        <field
           name="name"
           type="text"
           default=""

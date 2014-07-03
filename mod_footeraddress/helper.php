@@ -23,4 +23,13 @@ class modFooterAddressHelper
         );
     return $footerInfo;
   }
+  
+  public static function getShowSeparators( $params )
+  {
+    return $params->get('separators');
+  }
+  public static function getSeparatorChar( $params )
+  {
+    return $params->get('separator_char');
+  }
 }
