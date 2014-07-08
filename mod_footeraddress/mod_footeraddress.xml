@@ -3,7 +3,7 @@
   <name>mod_footeraddress</name>
   <author>Daniel Rodriguez</author>
   <creationDate>2014-05-05</creationDate>
-  <version>1.5</version>
+  <version>1.6</version>
   <description>MOD_FOOTERADDRESS_XML_DESCRIPTION</description>
   <files>
     <filename>mod_footeraddress.xml</filename>
@@ -19,19 +19,25 @@
           type="checkbox"
           default=""
           label="MOD_FOOTERADDRESS_SEPARATORS"
-          description="MOD_FOOTERADDRESS_FIELD,1" />
+          description="MOD_FOOTERADDRESS_FIELD,99" />
         <field
           name="separator_char"
           type="text"
           default=""
           label="MOD_FOOTERADDRESS_SEPARATOR_CHAR"
-          description="MOD_FOOTERADDRESS_FIELD,10" />
+          description="MOD_FOOTERADDRESS_FIELD,98" />
         <field
           name="name"
           type="text"
           default=""
           label="MOD_FOOTERADDRESS_NAME"
-          description="MOD_FOOTERADDRESS_FIELD,11" />
+          description="MOD_FOOTERADDRESS_FIELD,1" />
+        <field
+          name="description"
+          type="text"
+          default=""
+          label="MOD_FOOTERADDRESS_DESCRIPTION"
+          description="MOD_FOOTERADDRESS_FIELD,10" />
         <field
           name="address_street"
           type="text"

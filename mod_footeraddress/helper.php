@@ -20,6 +20,7 @@ class modFooterAddressHelper
         $params->get('landline'),
         $params->get('email'),
         $params->get('more'),
+        $params->get('description'),
         );
     return $footerInfo;
   }
