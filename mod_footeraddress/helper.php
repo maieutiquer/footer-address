@@ -18,6 +18,7 @@ class modFooterAddressHelper
         $params->get('address_country'),
         $params->get('mobile'),
         $params->get('landline'),
+        $params->get('fax'),
         $params->get('email'),
         $params->get('more'),
         $params->get('description'),
