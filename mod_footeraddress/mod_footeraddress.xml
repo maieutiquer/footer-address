@@ -37,7 +37,7 @@
           type="text"
           default=""
           label="MOD_FOOTERADDRESS_DESCRIPTION"
-          description="MOD_FOOTERADDRESS_FIELD,10" />
+          description="MOD_FOOTERADDRESS_DESCRIPTION_DESC" />
         <field
           name="address_street"
           type="text"
