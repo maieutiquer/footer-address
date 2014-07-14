@@ -23,7 +23,7 @@
         <field
           name="separator_char"
           type="text"
-          default=""
+          default="|"
           label="MOD_FOOTERADDRESS_SEPARATOR_CHAR"
           description="MOD_FOOTERADDRESS_SEPARATOR_CHAR_DESC" />
         <field
