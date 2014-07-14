@@ -3,7 +3,7 @@
   <name>mod_footeraddress</name>
   <author>Daniel Rodriguez</author>
   <creationDate>2014-05-05</creationDate>
-  <version>1.6</version>
+  <version>1.7</version>
   <description>MOD_FOOTERADDRESS_XML_DESCRIPTION</description>
   <files>
     <filename>mod_footeraddress.xml</filename>
