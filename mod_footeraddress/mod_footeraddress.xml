@@ -19,13 +19,13 @@
           type="checkbox"
           default=""
           label="MOD_FOOTERADDRESS_SEPARATORS"
-          description="MOD_FOOTERADDRESS_FIELD,99" />
+          description="MOD_FOOTERADDRESS_SEPARATORS_DESC" />
         <field
           name="separator_char"
           type="text"
           default=""
           label="MOD_FOOTERADDRESS_SEPARATOR_CHAR"
-          description="MOD_FOOTERADDRESS_FIELD,98" />
+          description="MOD_FOOTERADDRESS_SEPARATOR_CHAR_DESC" />
         <field
           name="name"
           type="text"
