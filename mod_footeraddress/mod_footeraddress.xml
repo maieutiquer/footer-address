@@ -13,7 +13,7 @@
 	</files>
 	<config>
 		<fields name="params">
-			<fieldset name="Address" label="MOD_FOOTERADDRESS_ADDRESS">
+			<fieldset name="basic" label="MOD_FOOTERADDRESS_ADDRESS">
 				<field
 					name="show_separators"
 					type="checkbox"
