@@ -25,8 +25,6 @@ function showFooterItem($footerItemName, $itemprop, $footerItems, $showSeparator
 
 $markup = '';
 
-$itemsCount = count(array_filter($footerItems));
-
 $showAddress = (
 		$footerItems['street']
 		|| $footerItems['postalcode']
@@ -36,7 +34,9 @@ $showAddress = (
 
 $markup.= '<address class="footer-address" itemscope itemtype="http://schema.org/Organization">';
 if ($footerItems['name']) {
-	$markup.= '<a id="homepage-link-footer" href="."><span itemprop="name">'.$footerItems['name'].'</span></a>';
+	$markup.= '<a id="homepage-link-footer" href=".">'
+			.showFooterItem('name', 'name', $footerItems)
+			.'</a>';
 }
 if ($footerItems['description']) {
 	$markup.= '<span class="footer-description">'.$footerItems['description'].'</span>';
@@ -61,12 +61,11 @@ if ($footerItems['more']) {
 $markup.= '</address>';
 
 if ($showSeparators) {
-	// add separator after closing span tag
+	// add separator after each closing span tag
 	$markup = str_replace(
 			'</span>',
 			'</span><span class="separator">'.$separatorChar.'</span>',
-			$markup,
-			$separatorsCount
+			$markup
 		);
 	// remove last separator
 	$markup = str_lreplace(
