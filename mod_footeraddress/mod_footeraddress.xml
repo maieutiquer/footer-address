@@ -15,11 +15,20 @@
 		<fields name="params">
 			<fieldset name="basic" label="MOD_FOOTERADDRESS_ADDRESS">
 				<field
+					name="object_type"
+					type="list"
+					default="organization"
+					label="MOD_FOOTERADDRESS_OBJECT_TYPE"
+					description="MOD_FOOTERADDRESS_OBJECT_TYPE_DESC">
+					<option value="Organization">Organization</option>
+					<option value="Person">Person</option>
+				</field>
+				<field
 					name="show_separators"
 					type="checkbox"
 					default=""
-					label="MOD_FOOTERADDRESS_SEPARATORS"
-					description="MOD_FOOTERADDRESS_SEPARATORS_DESC" />
+					label="MOD_FOOTERADDRESS_SHOW_SEPARATORS"
+					description="MOD_FOOTERADDRESS_SHOW_SEPARATORS_DESC" />
 				<field
 					name="separator_char"
 					type="text"

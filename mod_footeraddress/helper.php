@@ -2,6 +2,20 @@
 
 class modFooterAddressHelper
 {
+
+	public static function getObjectType( $params )
+	{
+		return $params->get('object_type');
+	}
+	public static function getShowSeparators( $params )
+	{
+		return $params->get('show_separators');
+	}
+	public static function getSeparatorChar( $params )
+	{
+		return $params->get('separator_char');
+	}
+
 	/**
 	 * Retrieves the info to show as footer
 	 *
@@ -26,12 +40,4 @@ class modFooterAddressHelper
 		return $footerItems;
 	}
 
-	public static function getShowSeparators( $params )
-	{
-		return $params->get('show_separators');
-	}
-	public static function getSeparatorChar( $params )
-	{
-		return $params->get('separator_char');
-	}
 }

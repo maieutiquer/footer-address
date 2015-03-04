@@ -32,7 +32,7 @@ $showAddress = (
 		|| $footerItems['country']
 	);
 
-$markup.= '<address class="footer-address" itemscope itemtype="http://schema.org/Organization">';
+$markup.= '<address class="footer-address" itemscope itemtype="http://schema.org/'.$objectType.'">';
 if ($footerItems['name']) {
 	$markup.= '<a id="homepage-link-footer" href=".">'
 			.showFooterItem('name', 'name', $footerItems)
