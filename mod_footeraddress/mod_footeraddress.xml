@@ -20,8 +20,8 @@
 					default="organization"
 					label="MOD_FOOTERADDRESS_OBJECT_TYPE"
 					description="MOD_FOOTERADDRESS_OBJECT_TYPE_DESC">
-					<option value="Organization">Organization</option>
-					<option value="Person">Person</option>
+					<option value="Organization">MOD_FOOTERADDRESS_OBJECT_TYPE_ORGANIZATION</option>
+					<option value="Person">MOD_FOOTERADDRESS_OBJECT_TYPE_PERSON</option>
 				</field>
 				<field
 					name="show_separators"
@@ -40,7 +40,7 @@
 					type="text"
 					default=""
 					label="MOD_FOOTERADDRESS_NAME"
-					description="MOD_FOOTERADDRESS_FIELD,1" />
+					description="MOD_FOOTERADDRESS_NAME_DESC" />
 				<field
 					name="description"
 					type="text"
@@ -51,56 +51,56 @@
 					name="address_street"
 					type="text"
 					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_1"
+					label="MOD_FOOTERADDRESS_ADDRESS_STREET"
 					description="MOD_FOOTERADDRESS_FIELD,2" />
 				<field
 					name="address_postcode"
 					type="text"
 					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_2"
+					label="MOD_FOOTERADDRESS_ADDRESS_POSTALCODE"
 					description="MOD_FOOTERADDRESS_FIELD,3" />
 				<field
 					name="address_locality"
 					type="text"
 					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_3"
+					label="MOD_FOOTERADDRESS_ADDRESS_LOCALITY"
 					description="MOD_FOOTERADDRESS_FIELD,4" />
 				<field
 					name="address_country"
 					type="text"
 					default=""
-					label="MOD_FOOTERADDRESS_ADDRESS_4"
+					label="MOD_FOOTERADDRESS_ADDRESS_COUNTRY"
 					description="MOD_FOOTERADDRESS_FIELD,5" />
 				<field
 					name="mobile"
 					type="text"
 					default=""
 					label="MOD_FOOTERADDRESS_MOBILE"
-					description="MOD_FOOTERADDRESS_FIELD,6" />
+					description="MOD_FOOTERADDRESS_ANY_FORMAT" />
 				<field
 					name="landline"
 					type="text"
 					default=""
-					label="MOD_FOOTERADDRESS_TELEPHONE"
-					description="MOD_FOOTERADDRESS_FIELD,7" />
+					label="MOD_FOOTERADDRESS_LANDLINE"
+					description="MOD_FOOTERADDRESS_ANY_FORMAT" />
 				<field
 					name="fax"
 					type="text"
 					default=""
 					label="MOD_FOOTERADDRESS_FAX"
-					description="MOD_FOOTERADDRESS_FIELD,7" />
+					description="MOD_FOOTERADDRESS_ANY_FORMAT" />
 				<field
 					name="email"
 					type="text"
 					default=""
 					label="MOD_FOOTERADDRESS_EMAIL"
-					description="MOD_FOOTERADDRESS_FIELD,8" />
+					description="MOD_FOOTERADDRESS_EMAIL_DESC" />
 				<field
 					name="more"
 					type="text"
 					default=""
 					label="MOD_FOOTERADDRESS_MOREINFO"
-					description="MOD_FOOTERADDRESS_FIELD,9" />
+					description="MOD_FOOTERADDRESS_MOREINFO_DESC" />
 			</fieldset>
 		</fields>
 	</config>
