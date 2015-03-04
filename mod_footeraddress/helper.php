@@ -7,28 +7,28 @@ class modFooterAddressHelper
    *
    * @param array $params An object containing the module parameters
    * @access public
-   */    
-  public static function getFooterInfo( $params )
+   */
+  public static function getfooterItems( $params )
   {
-    $footerInfo = array(
-        $params->get('name'),
-        $params->get('address_street'),
-        $params->get('address_postcode'),
-        $params->get('address_locality'),
-        $params->get('address_country'),
-        $params->get('mobile'),
-        $params->get('landline'),
-        $params->get('fax'),
-        $params->get('email'),
-        $params->get('more'),
-        $params->get('description'),
+    $footerItems = array(
+        'name' => $params->get('name'),
+        'description' => $params->get('description'),
+        'street' => $params->get('address_street'),
+        'postalcode' => $params->get('address_postcode'),
+        'locality' => $params->get('address_locality'),
+        'country' => $params->get('address_country'),
+        'mobile' => $params->get('mobile'),
+        'landline' => $params->get('landline'),
+        'fax' => $params->get('fax'),
+        'email' => $params->get('email'),
+        'more' => $params->get('more'),
         );
-    return $footerInfo;
+    return $footerItems;
   }
-  
+
   public static function getShowSeparators( $params )
   {
-    return $params->get('separators');
+    return $params->get('show_separators');
   }
   public static function getSeparatorChar( $params )
   {
