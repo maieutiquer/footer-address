@@ -1,18 +1,27 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );
 
 // replaces the last occurence of a string
-function str_lreplace($search, $replace, $subject)
-{
-    $pos = strrpos($subject, $search);
+function str_lreplace($search, $replace, $subject) {
+	$pos = strrpos($subject, $search);
 
-    if($pos !== false)
-    {
-        $subject = substr_replace($subject, $replace, $pos, strlen($search));
-    }
+	if($pos !== false) {
+		$subject = substr_replace($subject, $replace, $pos, strlen($search));
+	}
 
-    return $subject;
+	return $subject;
 }
 
+function showFooterItem($footerItemName, $itemprop, $footerItems, $showSeparator = true) {
+	$itemMarkup = '';
+	$disableSeparator = '';
+	if ($showSeparator == false) {
+		$disableSeparator = ' ';
+	}
+	if ($footerItems[$footerItemName]) {
+		$itemMarkup .= '<span itemprop="'.$itemprop.'">'.$footerItems[$footerItemName].'</span'.$disableSeparator.'>';
+	}
+	return $itemMarkup;
+}
 
 $markup = '';
 
@@ -34,30 +43,15 @@ if ($footerItems['description']) {
 }
 if ($showAddress) {
 	$markup.= '<div id="postal-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">';
-	if ($footerItems['street']) {
-		$markup.= '<span itemprop="streetAddress">'.$footerItems['street'].'</span>';
-	}
-	if ($footerItems['postalcode']) {
-		// no separator after postal code
-		$markup.= '<span itemprop="postalCode">'.$footerItems['postalcode'].'</span >';
-	}
-	if ($footerItems['locality']) {
-		$markup.= '<span itemprop="addressLocality">'.$footerItems['locality'].'</span>';
-	}
-	if ($footerItems['country']) {
-		$markup.= '<span itemprop="addressCountry">'.$footerItems['country'].'</span>';
-	}
+	$markup.= showFooterItem('street', 'streetAddress', $footerItems);
+	$markup.= showFooterItem('postalcode', 'postalCode', $footerItems, false);
+	$markup.= showFooterItem('locality', 'addressLocality', $footerItems);
+	$markup.= showFooterItem('country', 'addressCountry', $footerItems);
 	$markup.= '</div>';
 }
-if ($footerItems['mobile']) {
-	$markup.= '<span itemprop="telephone">'.$footerItems['mobile'].'</span>';
-}
-if ($footerItems['landline']) {
-	$markup.= '<span itemprop="telephone">'.$footerItems['landline'].'</span>';
-}
-if ($footerItems['fax']) {
-	$markup.= '<span itemprop="faxNumber">'.$footerItems['fax'].'</span>';
-}
+$markup.= showFooterItem('mobile', 'telephone', $footerItems);
+$markup.= showFooterItem('landline', 'telephone', $footerItems);
+$markup.= showFooterItem('fax', 'faxNumber', $footerItems);
 if ($footerItems['email']) {
 	$markup.= '<a id="site-email-footer" href="mailto:'.$footerItems['email'].'"><span itemprop="email">'.$footerItems['email'].'</span></a>';
 }
